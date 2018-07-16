@@ -1,0 +1,12 @@
+@font-face{
+    font-family:"fangzheng";
+    src: url('方正宋刻本秀楷简体.TTF');
+}
+
+.book, .book .book-summary, .book .book-body{
+    font-family:fangzheng;
+
+}
+.gitbook-link {
+    display: none !important;
+}
