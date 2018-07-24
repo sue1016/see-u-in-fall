@@ -13,4 +13,5 @@
 	 * [22 junkie](1807/22li.md)  
 	 * [23 Live Update](1807/23li.md)  
      * [23 参观](1807/23sue.md)  
+     * [24 生理期的想死](1807/24sue.md)  	
      * [24 Professional的新头像](1807/24li.md)
