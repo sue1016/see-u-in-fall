@@ -1,6 +1,4 @@
-#您要是不嫌弃我的代码，第三行cd改一下，li都改成sue就能用了
-
-cd /e/see-u-in-fall
+#您要是不嫌弃我的代码，li都改成sue就能用了
 
 cur=`date +%y%m`  #1807
 curFile="`date +%d`li.md"  #24li.md
