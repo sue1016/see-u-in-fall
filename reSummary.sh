@@ -1,4 +1,5 @@
 #您要是不嫌弃我的代码，li都改成sue就能用了
+# 太强啦:)  
 
 cur=`date +%y%m`  #1807
 curFile="`date +%d`li.md"  #24li.md
