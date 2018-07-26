@@ -2,6 +2,11 @@ dir=`date +%y%m`
 file="`date +%d`li.md"
 newFile="${dir}/${file}"
 
+if [ ! -d ${dir} ]
+then
+    mkdir ${dir}
+fi
+
 if [ -f ${newFile} ]
 then
     sed -i '$d' ${newFile}
