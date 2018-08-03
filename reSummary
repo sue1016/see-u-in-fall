@@ -5,6 +5,11 @@ cur=`date +%y%m`  #1807
 curFile="`date +%d`li.md"  #24li.md
 curPath="${cur}/${curFile}"  #1807/24li.md
 
+if [ `date +%d` -eq 1 ]
+then
+    echo "* [1808](1808/README.md)  " >> SUMMARY.md
+fi
+
 preLine=$(tail -1 SUMMARY.md)
 temp=${preLine##*(}  #1807/23sue.md)
 prePath=${temp%)*}  #1807/23sue.md
