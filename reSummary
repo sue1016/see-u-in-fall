@@ -1,0 +1,34 @@
+#您要是不嫌弃我的代码，li都改成sue就能用了
+# 太强啦:)  
+
+cur=`date +%y%m`  #1807
+curFile="`date +%d`li.md"  #24li.md
+curPath="${cur}/${curFile}"  #1807/24li.md
+
+if [ `date +%d` -eq 1 ]
+then
+    echo "* [1808](1808/README.md)  " >> SUMMARY.md
+fi
+
+preLine=$(tail -1 SUMMARY.md)
+temp=${preLine##*(}  #1807/23sue.md)
+prePath=${temp%)*}  #1807/23sue.m
+pre=${prePath%/*}  #1807
+
+read line < $curPath
+title=${line:2}
+
+if [ "$pre"x != "${cur}"x ]
+then
+    echo -e "# ${cur}  " >> ${cur}/README.md
+    echo -e "* [${cur}](${cur}/README.md)  " >> SUMMARY.md
+fi
+
+if [ "$curPath"x = "$prePath"x ]
+then
+    sed -i '$d' SUMMARY.md
+fi
+
+day=`date +%d`
+echo -e "     * [${day} ${title}](${curPath})" >> SUMMARY.md
+cat SUMMARY.md
